@@ -1,39 +1,29 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Caesar Cipher Python Program
 
-Welcome,
+## Description
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This Python program implements a simple version of the Caesar Cipher, a type of substitution cipher where each letter in the plaintext is shifted a certain number of places down or up the alphabet. The program allows users to encode (encrypt) or decode (decrypt) messages using this cipher technique.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Features
 
-## Codeanywhere Reminders
+- Encryption and Decryption: Users can choose to either encrypt or decrypt a message.
+- Custom Shift Values: Users can specify the shift value for the cipher.
+- Continuous Operation: The program can continuously process messages until the user decides to stop.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## How to Use
 
-`python3 -m http.server`
+- Start the Program: Run the program in a Python environment.
+- Choose Operation: When prompted, type 'encode' to encrypt a message or 'decode' to decrypt a message.
+- Enter the Message: Type the message you want to encrypt or decrypt. Note that the current version of the program only processes lowercase alphabetic characters.
+- Enter Shift Value: Enter an integer value for the shift. The program will automatically adjust shift values greater than 26.
+View the Result: The program will display the encoded or decoded message.
+- Repeat or Exit: After processing a message, you can choose to encode/decode another message or exit the program by typing 'yes' to continue or 'no' to stop.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Dependencies
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- Python Standard Library: No external libraries are required as the program uses only the Python Standard Library.
+- Art Module: The art module is used to print a logo at the start of the program. Ensure this module is installed (pip install art) or remove the print(logo) line if the module is unavailable.
 
-`http_server`
+## Disclaimer
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+This program is for educational purposes only. The Caesar Cipher is a basic encryption method and should not be used for securing sensitive data.
